@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thương mại điện tử</title>
+</head>
+<body>
+    <header>
+        <h1>Trang web thương mai điện tử</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Giỏ hàng</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+        <section>
+            <table border="1">
+                <thead>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                </thead>
+               <tr>
+                <td rowspan="3"><img src="./Session 3/IMG/tao.jpg" alt="Hình ảnh trái táo" width="50" height="50"></td>
+                <td><a href="#">Sản phẩm 1</a></td>
+                <td rowspan="3">100,000đ</td>
+                <td rowspan="3">Mô tả sản phẩm 1</td>
+               </tr>
+               <tr>
+                <td>Size: M</td>
+               </tr>
+               <tr>
+                <td>Color: N</td>
+               </tr>
+               <tr>
+                <td><img src="./Session 3/IMG/mbp-spacegray-select-202206.jfif" alt="Hình ảnh laptop" width="50" height="50"></td>
+                <td><a href="#">Sản phẩm 2</a></td>
+                <td>200,000đ</td>
+                <td valign="middle">Mô tả sản phẩm 2</td>
+               </tr>
+               <tr>
+                <td colspan="3"><img src="./Session 3/IMG/iphone.jfif" alt="Hình ảnh iphone" width="50" height="50"></td>
+                <td valign="middle">Mô tả sản phẩm 3</td>
+               </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Liên hệ</h3>
+            <form action="contact" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="content">Nội dung:</label>
+                <textarea name="content" id="content" cols="20" rows="5"></textarea><br>
+                <input type="submit" value="Gửi">
+            </form>
+        </section>
+        <section>
+            <h3>Thanh toán</h3>
+            <form action="payment" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="card">Số thẻ:</label>
+                <input type="text" name="card" id="card"><br>
+                <label for="date">Ngày hết hạn:</label>
+                <input type="text" name="date" id="date"><br>
+                <input type="button" value="Thanh toán">
+            </form>
+        </section>
+    </main><br>
+    <footer>&#169; 2023 Trang web thương mại điện tử</footer>
+</body>
+</html>
